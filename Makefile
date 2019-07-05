@@ -1,2 +1,4 @@
 run:
-	gunicorn app:app -b 0.0.0.0:8080
+	gunicorn app:app \
+		--error-logfile - \
+		-b 0.0.0.0:8080
